@@ -31,7 +31,7 @@ Just for fun and learning purposes.
 ### to run
 
 ```shell
-./gradlew :composeApp:wasmJsBrowserDevelopmentRun
+./gradlew :composeApp:wasmJsBrowserRun
 ```
 
 ## Server
