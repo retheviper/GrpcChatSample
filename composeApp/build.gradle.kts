@@ -9,6 +9,9 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.kotlinx.serialization)
+    //    alias(libs.plugins.kotlinx.rpc) // FIXME kotlin 2.0 not supported yet
+    alias(libs.plugins.googleDevtools.ksp)
 }
 
 kotlin {
@@ -52,6 +55,14 @@ kotlin {
     
     sourceSets {
         val desktopMain by getting
+
+        dependencies {
+            implementation(libs.kotlinx.rpc.client)
+            implementation(libs.kotlinx.rpc.serialization.json)
+            implementation(libs.kotlinx.rpc.ktor.client)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.cio)
+        }
         
         androidMain.dependencies {
             implementation(compose.preview)

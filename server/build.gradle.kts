@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.kotlinJvm)
     alias(libs.plugins.ktor)
+    alias(libs.plugins.kotlinx.serialization)
+    //    alias(libs.plugins.kotlinx.rpc) // FIXME kotlin 2.0 not supported yet
+    alias(libs.plugins.googleDevtools.ksp)
     application
 }
 
@@ -16,6 +19,9 @@ dependencies {
     implementation(libs.logback)
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.netty)
+    implementation(libs.kotlinx.rpc.server)
+    implementation(libs.kotlinx.rpc.ktor.server)
+    implementation(libs.kotlinx.rpc.serialization.json)
     testImplementation(libs.ktor.server.tests)
     testImplementation(libs.kotlin.test.junit)
 }
