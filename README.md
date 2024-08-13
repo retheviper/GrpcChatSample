@@ -1,8 +1,8 @@
-# Compose Multiplatform GRPC Chat Sample Project
+# Compose Multiplatform RPC Chat Sample Project
 
 ## TL;DR
 
-This is a sample project that demonstrates how to use Compose Multiplatform with GRPC.
+This is a sample project that demonstrates how to use Compose Multiplatform with RPC.
 
 Just for fun and learning purposes.
 

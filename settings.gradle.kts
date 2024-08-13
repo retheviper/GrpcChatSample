@@ -1,4 +1,4 @@
-rootProject.name = "GrpcChatSample"
+rootProject.name = "RpcChatSample"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
